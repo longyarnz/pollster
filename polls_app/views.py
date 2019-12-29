@@ -1,8 +1,7 @@
 from django.shortcuts import get_object_or_404, render
-from django.http import HttpResponse, HttpResponseRedirect, Http404
-from .models import Question, Choice
-from django.template import loader
+from django.http import HttpResponseRedirect, Http404
 from django.urls import reverse
+from .models import Question, Choice
 
 # Get questions and display them
 def index(request):
