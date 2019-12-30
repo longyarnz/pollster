@@ -11,8 +11,8 @@
           <p class="lead">
             {{question.question_text}}
           </p>
-          <a class="btn btn-primary btn-sm" href="{% url 'polls:detail' question.id %}">Vote Now</a>
-          <a class="btn btn-secondary btn-sm" href="{% url 'polls:results' question.id %}">Results</a>
+          <a class="btn btn-primary btn-sm" href="{%url 'polls_app:detail' question.id %}">Vote Now</a>
+          <a class="btn btn-secondary btn-sm" href="{%url 'polls_app:results' question.id %}">Results</a>
         </div> 
       </div>
     {% endfor %}
